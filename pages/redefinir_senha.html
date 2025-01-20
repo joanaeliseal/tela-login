@@ -7,26 +7,28 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <div class="login-container">
-        <h1>Redefinir Senha</h1>
-        <p>Por favor, insira seu e-mail para enviar o link de redefinição de senha.</p>
+    <!-- Página de Redefinição de Senha -->
+    <div class="reset-password-container">
+        <h2>Redefinir Senha</h2>
         <form id="resetPasswordForm">
-            <label for="resetEmail">E-mail:</label>
-            <input type="email" id="resetEmail" placeholder="Digite seu e-mail" required>
-            <span id="resetEmailError" class="error"></span>
-            <button type="submit" class="btn">Enviar Link</button>
+            <div class="input-group">
+                <label for="resetEmail">E-mail:</label>
+                <input type="email" id="resetEmail" placeholder="Digite seu e-mail" required />
+                <span id="resetEmailError" class="error-message"></span>
+            </div>
+            <button type="submit" class="btn">Enviar link de redefinição</button>
         </form>
     </div>
 
-    <!-- Modal para confirmação -->
+    <!-- Modal: Verifique seu E-mail -->
     <div id="modal" class="modal">
         <div class="modal-content">
-            <h2>Verifique seu e-mail</h2>
-            <p>Um link para redefinição de senha foi enviado para o endereço informado.</p>
-            <button id="closeModal" class="btn">OK</button>
+            <span id="closeModal" class="close">&times;</span>
+            <p>Verifique seu e-mail para redefinir a senha.</p>
         </div>
     </div>
 
     <script src="../js/main.js"></script>
 </body>
 </html>
+

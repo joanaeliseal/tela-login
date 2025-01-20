@@ -16,7 +16,7 @@ body {
     min-height: 100vh;
 }
 
-/* Container principal */
+/* Container principal para página de login */
 .login-container {
     background: #fff;
     border-radius: 8px;
@@ -94,6 +94,7 @@ button:hover {
 .forgot-password:hover {
     color: #d8e434;
     text-decoration: underline;
+}
 
 /* Mensagens de erro e sucesso */
 .error {
@@ -109,7 +110,7 @@ button:hover {
     margin-top: 15px;
 }
 
-/* Ajustar espaçamento */
+/* Ajustar espaçamento no formulário de redefinição de senha */
 form #resetEmail {
     margin-bottom: 10px;
 }
@@ -133,22 +134,74 @@ form .btn {
 }
 
 .modal-content {
-    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     max-width: 400px;
     width: 90%;
 }
 
-.modal-content h2 {
-    margin-bottom: 10px;
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
 }
 
+/* Modal de sucesso: Verifique seu e-mail */
 .modal-content p {
     margin-bottom: 20px;
 }
 
+/* Estilo da página de redefinição de senha */
+.reset-password-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.reset-password-container h2 {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#errorMessage {
+    color: red;
+    font-size: 12px;
+}
+
+button.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #e9f035;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
 
 /* Estilização responsiva */
 @media (max-width: 768px) {
@@ -165,4 +218,4 @@ form .btn {
         padding: 10px;
     }
 }
-}
+
