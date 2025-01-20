@@ -1,0 +1,168 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container principal */
+.login-container {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 90%; /* Ajuste para dispositivos menores */
+    max-width: 400px; /* Limite para desktops */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Formulário */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input:focus {
+    border-color: #e9f035;
+    outline: none;
+}
+
+button {
+    background-color: #e9f035;
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    padding: 12px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d8e434;
+}
+
+/* Link "Esqueci minha senha" */
+.form-actions {
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+.forgot-password {
+    font-size: 14px;
+    color: #e9f035;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#forgotPasswordLink {
+    color: #e9f035;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.forgot-password:hover {
+    color: #d8e434;
+    text-decoration: underline;
+
+/* Mensagens de erro e sucesso */
+.error {
+    color: red;
+    font-size: 12px;
+    height: 12px;
+    margin-top: 5px;
+}
+
+.success-message {
+    color: green;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Ajustar espaçamento */
+form #resetEmail {
+    margin-bottom: 10px;
+}
+
+form .btn {
+    margin-top: 20px;
+}
+
+/* Estilo do modal */
+.modal {
+    display: none; /* Oculto por padrão */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+.modal-content h2 {
+    margin-bottom: 10px;
+}
+
+.modal-content p {
+    margin-bottom: 20px;
+}
+
+
+/* Estilização responsiva */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .login-container {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+}

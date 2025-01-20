@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redefinir Senha</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Redefinir Senha</h1>
+        <p>Por favor, insira seu e-mail para enviar o link de redefinição de senha.</p>
+        <form id="resetPasswordForm">
+            <label for="resetEmail">E-mail:</label>
+            <input type="email" id="resetEmail" placeholder="Digite seu e-mail" required>
+            <span id="resetEmailError" class="error"></span>
+            <button type="submit" class="btn">Enviar Link</button>
+        </form>
+    </div>
+
+    <!-- Modal para confirmação -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2>Verifique seu e-mail</h2>
+            <p>Um link para redefinição de senha foi enviado para o endereço informado.</p>
+            <button id="closeModal" class="btn">OK</button>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
